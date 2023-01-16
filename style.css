@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 :root {
-    --green: #009900;
-    --greenHover: #00e600;
+    --green: #00e600;
+    --greenHover: #009900;
 }
 html {
     font-size: 16px;
@@ -19,6 +19,7 @@ nav {
     align-items: center;
     height: 8vh;
     padding: 2em;
+    position: relative;
 }
 .icon-fast-food {
     
@@ -49,6 +50,13 @@ a::after {
 a:hover::after {
     width: 100%;
 }
+.menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: none;
+}
 .line {
     width: 3em;
     height: .3em;
@@ -56,8 +64,12 @@ a:hover::after {
     margin: .6em;
     border-radius: 20px;
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1000px) {
+    .menu {
+        display: block;
+        transition: .3s ease-in-out;
+    }
     ul {
-        width: 100%;
+        
     }
 }
