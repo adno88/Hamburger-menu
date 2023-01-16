@@ -70,6 +70,15 @@ a:hover::after {
         transition: .3s ease-in-out;
     }
     ul {
-        
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        background: lightgray;
+        height: 92vh;
+        flex-direction: column;
+        text-align: center;
+    }
+    a {
+        letter-spacing: 3px;
     }
 }
