@@ -12,9 +12,9 @@
     <nav>
         <i class="icon-fast-food"></i>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Start</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Delivery</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
         <button class="menu">
@@ -23,5 +23,14 @@
             <div class="line"></div>
         </button>
     </nav>
+    <script>
+        const list = document.querySelector('ul');
+        const menuButton = document.querySelector('.menu');
+
+        menuButton.addEventListener('click', function(){
+            list.classList.toggle('show');
+            menuButton.classList.toggle('show');
+        })
+    </script>
 </body>
 </html>
